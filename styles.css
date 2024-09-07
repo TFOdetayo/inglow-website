@@ -1,0 +1,604 @@
+/* Home Section */
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+  color: whitesmoke;
+  background-image: url("img/rachit-tank-2cFZ_FB08UM-unsplash.jpg"); /* Initial background image */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Ensure the image stays fixed during scrolling */
+  animation: slide 20s infinite; /* Apply the slide animation with a duration of 12 seconds */
+  border: none; /* Remove any borders around the section */
+}
+
+/* Keyframes for the sliding background */
+@keyframes slide {
+  0% {
+    background-image: url("img/hom1.jpg");
+  }
+  25% {
+    background-image: url("img/hom2.jpg");
+  }
+  50% {
+    background-image: url("img/hom3.jpg");
+  }
+  75% {
+    background-image: url("img/hom4.jpg");
+  }
+  100% {
+    background-image: url("img/hom6.jpg"); /* Loop back to the initial image */
+  }
+}
+
+#home .home {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.208
+  ); /* Optional: semi-transparent background for better text readability */
+  padding: 20px; /* Optional: add padding for spacing */
+  border-radius: 5px; /* Optional: rounded corners for the text box */
+  max-width: 90%; /* Prevent text from stretching too wide */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+#home h2 {
+  font-size: 2rem;
+  font-family: serif;
+  text-transform: uppercase;
+}
+
+#home p a {
+  color: black;
+  background-color: #fcc707;
+  width: 100px;
+  margin: auto;
+  padding: 8px;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: 0.8s;
+  border-radius: 5px;
+}
+
+#home p a:hover {
+  color: #fcc707;
+  background-color: black;
+  padding: 8px 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #home h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #home h2 {
+    font-size: 1.2rem; /* Further reduce font size for very small screens */
+    padding: 10px; /* Adjust padding for very small screens */
+  }
+}
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the INGLOW text logo */
+header h1 {
+  color: #fcc707; /* Set the logo color to white */
+  margin: 0;
+  font-size: 24px;
+}
+
+header a {
+  text-decoration: none; /* Remove underline */
+}
+
+header a:visited,
+header a:link,
+header a:hover,
+header a:active {
+  color: #fcc707; /* Keep the logo color white in all states */
+}
+
+/* Base styles for the statement */
+.statement {
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 90%;
+  padding: 20px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .statement {
+    font-size: 1.5rem;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .statement {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+
+header {
+  background-color: #292929;
+  color: white;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #292929;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.search-container input {
+  padding: 5px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-container button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-menu ul li {
+  margin: 0;
+}
+
+.nav-menu ul li a {
+  color: #fcc707;
+  text-decoration: none;
+}
+
+.nav-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-menu ul li {
+    margin: 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .nav-menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    text-align: center;
+  }
+
+  .header-content h1 {
+    font-size: 20px;
+  }
+
+  .search-container input,
+  .search-container button {
+    font-size: 14px;
+  }
+
+  .nav-menu ul li {
+    margin: 5px 0;
+  }
+}
+
+.few-products {
+  margin-top: 40px;
+}
+
+.product-grid {
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line if needed */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Center align items horizontally */
+  margin-bottom: 20px;
+}
+
+.products .product-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 250px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Cover the box while maintaining aspect ratio */
+  border-radius: 5px;
+  transition-duration: 1s;
+}
+
+/* .product-item img:hover {
+  width: 90%;
+} */
+
+.product-item:hover {
+  width: 300px;
+}
+
+.product-item h3 {
+  margin: 10px 0 5px;
+}
+
+.product-item p {
+  font-size: 18px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .product-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Slides */
+.slide {
+  display: none; /* Hide all slides by default */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out; /* Transition effect */
+}
+
+/* Display the first slide */
+.slide:nth-child(1) {
+  display: block;
+  opacity: 1;
+}
+
+/* Slide image */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire area */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide img {
+    object-fit: cover;
+  }
+}
+
+/* Banner Section */
+#banner {
+  position: relative;
+  height: 20vh; /* Adjust the height as needed */
+  background-image: linear-gradient(
+    to right,
+    purple,
+    skyblue
+  ); /* Purple and Skyblue gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* White text color */
+  text-align: center;
+}
+
+#banner .banner-content {
+  padding: 10px;
+  background-color: none; /* Optional: Add a semi-transparent background behind the text */
+  border-radius: 5px; /* Optional: Rounded corners for the text background */
+}
+
+#banner h2 {
+  font-size: 3rem; /* Adjust text size */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #banner h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #banner h2 {
+    font-size: 1.5rem; /* Further reduce font size for very small screens */
+  }
+}
+/* Top Deals Section */
+#top-deals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust gap between images if needed */
+  justify-content: center; /* Center the images horizontally */
+  margin: 20px 0 20px; /* Increase the top margin to move it downwards */
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  #top-deals {
+    margin: 40px 0 20px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  #top-deals {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.top-deal-item {
+  /* flex: 1 1 calc(50% - 20px); Two items per row with gap adjustment */
+  max-width: 270px; /* Set max width to 300px */
+  height: 270px; /* Set height to 300px */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Dark shadow */
+  overflow: hidden; /* Ensure images stay within the rounded borders */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s;
+}
+
+.top-deal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.top-deal-item:hover {
+  max-width: 300px;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #fcc707;
+  color: black;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 3px;
+  color: black;
+  padding-bottom: 0;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section form,
+.footer-section .message {
+  margin-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section form input,
+.footer-section form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.footer-section form button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-section form button:hover {
+  background-color: #201f1f;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-bottom p {
+  text-align: right;
+  margin: 3px 0;
+}
+
+/* Buy Now Button */
+.buy-now {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now:active {
+  background-color: #fcc707;
+}
+
+.buy-now-btn {
+  background: #fcc707;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.8s ease;
+}
+
+.buy-now-btn:hover {
+  color: #fcc707;
+  background: black;
+  padding: 10px 25px;
+  font-size: 15px;
+}
+
+.buy-now-btn:active {
+  background: #fcc707;
+}
+
+/* Top Deals Banner */
+#top-deals-banner {
+  position: relative;
+  height: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fcc707;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#top-deals-banner h2 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #top-deals-banner h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #top-deals-banner h2 {
+    font-size: 1.5rem;
+  }
+}

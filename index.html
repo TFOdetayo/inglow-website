@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - INGLOW</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html">
+          <h1>I N G L O W</h1>
+        </a>
+        <div>
+          <div class="nav-toggle">Menu</div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="index.html#home">Home</a></li>
+              <li><a href="product.html">Products</a></li>
+              <li><a href="index.html#cart">Cart</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- <div class="search-container">
+                <input type="text" id="search" placeholder="Search products...">
+                <button onclick="searchProducts()">Search</button>
+            </div> -->
+        </div>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="home">
+        <h2>glow from inside</h2>
+        <p><a href="product.html">shop now</a></p>
+      </div>
+    </section>
+
+    <!-- New Products Section -->
+
+    <section class="few-products">
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="img/photo_2024-08-22_05-10-25.jpg" alt="Product 1" />
+          <h3>Product 1</h3>
+          <p>₦7,500</p>
+          <a
+            href="mailto:odetayoace1a@gmail.com?subject=Hello INGLOW, I want to buy Product 1"
+          >
+            <button class="buy-now-btn">Buy Now</button>
+          </a>
+        </div>
+        <div class="product-item">
+          <img src="img/photo_2024-08-22_05-10-25.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <p>₦11,000</p>
+          <a
+            href="mailto:odetayoace1a@gmail.com?subject=Hello INGLOW, I want to buy Product 2"
+          >
+            <button class="buy-now-btn">Buy Now</button>
+          </a>
+        </div>
+        <div class="product-item">
+          <img src="img/photo_2024-08-22_05-10-25.jpg" alt="Product 1" />
+          <h3>Product 3</h3>
+          <p>₦7,500</p>
+          <a
+            href="mailto:odetayoace1a@gmail.com?subject=Hello INGLOW, I want to buy Product 1"
+          >
+            <button class="buy-now-btn">Buy Now</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Deals Banner -->
+    <section id="top-deals-banner">
+      <div class="banner-content">
+        <h2>Top Deals</h2>
+      </div>
+    </section>
+
+    <!-- Updated Top Deals Section -->
+    <section id="top-deals">
+      <div class="top-deal-item">
+        <img src="img/top1.jpg" alt="Top Deal 1" />
+      </div>
+      <div class="top-deal-item">
+        <img src="img/top2.jpg" alt="Top Deal 2" />
+      </div>
+      <div class="top-deal-item">
+        <img src="img/top3.jpg" alt="Top Deal 3" />
+      </div>
+      <div class="top-deal-item">
+        <img src="img/top4.jpg" alt="Top Deal 4" />
+      </div>
+    </section>
+
+    <section id="contact">
+      <!-- Your contact form and details here -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-section contact">
+          <h4>Contact</h4>
+          <ul>
+            <li>University Of Ibadan</li>
+            <li>Call Us: +2349075653350</li>
+            <li>Email Us: odetayoace1a@gmail.com</li>
+            <li>Open Hours: Monday - Friday, 9:00AM - 05:00PM</li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>
+            Subscribe to our newsletter and receive the latest news about our
+            products and services!
+          </p>
+          <form
+            action="mailto:odetayoace1a@gmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <!-- <p class="message">Your message has been sent. Thank you!</p> -->
+        </div>
+
+        <div class="footer-section useful-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section services">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Online Shopping</a></li>
+            <li><a href="#">Male and Female wears</a></li>
+            <li><a href="#">Thrift</a></li>
+            <li><a href="#">Marketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <ul>
+            <li>
+              <a href="https://twitter.com/yourhandle" target="_blank">X</a>
+            </li>
+            <li>
+              <a href="https://instagram.com/yourhandle" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://facebook.com/yourhandle" target="_blank"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 INGLOW</p>
+      </div>
+    </footer>
+
+    <script src="product-search.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
